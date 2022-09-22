@@ -27,6 +27,7 @@ function clickOnImg(evt) {
         document.addEventListener("keydown", function (evt) {
           if (evt.key === "Escape") {
             return instance.close();
+            window.removeEventListener("keydown", onEscPress);
           }
         });
       },
@@ -34,6 +35,7 @@ function clickOnImg(evt) {
         document.addEventListener("keydown", function (evt) {
           if (evt.key === "Escape") {
             return instance.close();
+            window.removeEventListener("keydown", onEscPress);
           }
         });
       },
